@@ -1,0 +1,16 @@
+{
+  "name": "mobile-preview",
+  "main": "./lib/mobile-preview",
+  "version": "0.2.2",
+  "private": true,
+  "description": "Mobile Web Preview Of Local/Remote URL's",
+  "activationEvents": [
+    "mobile-preview:toggle"
+  ],
+  "repository": "https://github.com/kenwheeler/mobile-preview",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {}
+}
