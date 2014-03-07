@@ -1,4 +1,8 @@
-# Mobile Preview (Beta)
+# Mobile Preview
+
+Install with `apm install mobile-preview`
+
+Trigger with `crtl+opt+m`
 
 This package opens either a remote/local url or your current file in a mobile preview panel.
 
