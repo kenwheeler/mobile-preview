@@ -36,7 +36,6 @@ class MobilePreviewEditorView extends View
     return unless @hasParent()
     @detaching = true
     selectEditorFocused = @selectEditor.isFocused
-    @selectEditor.setText('')
     super
     @detaching = false
 
@@ -54,3 +53,5 @@ class MobilePreviewEditorView extends View
   attach: ->
     atom.workspaceView.append(this)
     @selectEditor.focus()
+    if !atom.config.get('mobile-preview.keepLastUrl') || @selectEditor.getText() == ''
+        @selectEditor.setText(atom.config.get('mobile-preview.defaultUrl'))
